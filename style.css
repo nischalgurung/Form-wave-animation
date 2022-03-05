@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: rgb(97, 29, 143);
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.315);
+  position: relative;
+  color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 15px black;
+}
+.container h1 {
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 50px 0;
+}
+.form-control input {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  font-size: 1.2rem;
+  color: white;
+  width: 100%;
+}
+.form-control input:focus,
+.form-control input:valid {
+  outline: none;
+  border-bottom-color: rgb(203, 175, 255);
+}
+.form-control label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form-control label span {
+  display: inline-block;
+  font-size: 1.2rem;
+  min-width: 5px;
+  transform: translateY();
+  transition: 0.3s cubic-bezier(0.7, 0.6, 0.3, 1.6);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: rgb(203, 175, 255);
+  transform: translateY(-2rem);
+}
+.text a {
+  color: rgba(235, 235, 235, 0.562);
+  text-decoration: none;
+}
+.text {
+  margin-top: 2.5rem;
+}
+
+.container button {
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.349);
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  font-family: inherit;
+  cursor: pointer;
+}
